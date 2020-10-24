@@ -1,0 +1,10 @@
+# Maven output folders
+/target/
+/bin/
+
+# Eclipse project files
+.classpath
+.project
+
+# Hidden folders (used by IDEs for workspace settings and such things)
+/.*/

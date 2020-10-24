@@ -1,0 +1,8 @@
+name: Terralava
+version: ${project.version}
+main: org.terradev.terralava.Terralava
+api-version: 1.16
+prefix: Terralava
+authors: [ Skiller9090, dziaod, Geolykt, PSK1103 ]
+description: A plugin that allows the user to drink lava and die
+website: https://terradev.org/
