@@ -90,7 +90,8 @@ class LavaDrinkingManager implements Listener {
      */
     @EventHandler
     public void onPlayerDeath(@NotNull PlayerDeathEvent evt) {
-        if (drinkingProgress.remove(evt.getEntity().getUniqueId()) == 100) {
+        Byte b = drinkingProgress.remove(evt.getEntity().getUniqueId());
+        if (b != null && b == 100) {
             lastInteraction.remove(evt.getEntity().getUniqueId()); // GC
             evt.setDeathMessage(evt.getEntity().getCustomName() + ChatColor.RESET + " decided to drink lava.");
         }
